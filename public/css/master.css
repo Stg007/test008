@@ -1,0 +1,13 @@
+.imageBankContainer{
+  /*background-color: red;*/
+  height: 3500px;
+}
+.imageBankItem{
+  background-color: blue;
+  width: 200px;
+  height : auto;
+  border: 1px solid #000;
+  margin-left: 26px;
+  margin-top: 110px;
+  position: absolute;
+}
