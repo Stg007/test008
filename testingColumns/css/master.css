@@ -1,0 +1,15 @@
+
+.bankContainer{
+    width : 100%;
+    height: 500px;
+    background-color: red;
+}
+.bankColumn{
+  background-color: green;
+  height: 250px;
+  float: left;
+}
+.imageBankItem{
+  background-color: blue;
+  width: 97%;
+}

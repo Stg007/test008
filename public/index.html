@@ -8,11 +8,18 @@
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
     <link rel="stylesheet" href="css/master.css" charset="utf-8">
   </head>
-  <body ng-app="imageBank">
-    <div id="iBankContainer" ng-controller="imageBankCtrl" class="imageBankContainer">
+  <body ng-app="imageBank" ng-controller="imageBankCtrl">
+    <div id="iBankContainer"  class="imageBankContainer">
       <h1 align="center">Image Bank</h1>
     </div>
-    <center><button>Press to load more</button></center>
+    <div class="ibFooter">
+      <center><button ng-click="more()">Press to load more</button></center>
+    </div>
+    <div ng-controller="TestingDirectiveCtrl">
+      <div image-bank-dir ng-repeat="x in data">
+        {{x}}
+      </div>
+    </div>
     <script type="text/javascript" src="app.js"></script>
   </body>
 </html>

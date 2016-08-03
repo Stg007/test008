@@ -1,13 +1,44 @@
 .imageBankContainer{
-  /*background-color: red;*/
-  height: 3500px;
+    width : 94%;
+    margin-left:3%;
+    /*height: 500px;*/
+    /*background-color: red;*/
+}
+.imageBankColumn{
+  /*background-color: green;*/
+  /*height: 250px;*/
+  float: left;
 }
 .imageBankItem{
-  background-color: blue;
-  width: 200px;
-  height : auto;
-  border: 1px solid #000;
-  margin-left: 26px;
-  margin-top: 110px;
-  position: absolute;
+  /*background-color: blue;*/
+  width: 96%;
+  padding-bottom: 1px;
+}
+.imageBankItem:hover {
+    box-shadow: 0px 0px 50px #888888;
+    margin-bottom: 5px;
+    /*padding: 2px;*/
+    /*padding-bottom: 15px;*/
+}
+
+
+.iBankImage{
+  margin-top:4px;
+  width: 96%;
+  margin-left: 2%;
+  cursor: pointer;
+}
+.iBankTitle{
+  list-style: none;
+  list-style-type: none;
+  padding-left: 2px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+  line-height: 17px;
+  cursor: pointer;
+}
+.ibFooter{
+  float: left;
+  width: 100%;
 }
