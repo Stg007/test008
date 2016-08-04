@@ -9,16 +9,18 @@
     <link rel="stylesheet" href="css/master.css" charset="utf-8">
   </head>
   <body ng-app="imageBank" ng-controller="imageBankCtrl">
-    <div id="iBankContainer"  class="imageBankContainer">
+    <div id="iBankContainer" class="imageBankContainer">
       <h1 align="center">Image Bank</h1>
+      <div image-bank-dir total-images="{{imagesHeights.length}}" ng-repeat="x in imagesHeights track by $index">
+        <img id="img-{{$index}}" ng-src="{{x}}" title="image title" class="iBankImage" />
+        <ul class="iBankTitle">
+          <li>Title here</li>
+          <li style="font-size: 12px;font-weight: normal;cursor: default;">Rogier van der Weyden · 1435-1440</li>
+        </ul>
+      </div>
     </div>
     <div class="ibFooter">
       <center><button ng-click="more()">Press to load more</button></center>
-    </div>
-    <div ng-controller="TestingDirectiveCtrl">
-      <div image-bank-dir ng-repeat="x in data">
-        {{x}}
-      </div>
     </div>
     <script type="text/javascript" src="app.js"></script>
   </body>
